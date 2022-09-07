@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MagicEightBall</title>
+    
+</head>
+<body>
+    <main>
+        <h1 id="welcome">Welcome to Magic Eight Ball!</h1>
+        <img src="https://cdn.shopify.com/s/files/1/0344/6469/files/magic-8-ball.gif?v=1621002225" alt="cat with an eight ball img"/>
+        <h3>Enter your name and ask me anything</h3>
+        <br><br>
+        <form >
+            <label for="uname">Name</label>
+            <input type="text" id="uname" name="username">
+            <button onclick="showGreeting()" id='greeting'>Enter</button>
+            <br><br>
+            <label for="question">Question</label>
+            <input type="text" id="question" name="question"><br><br>
+            <input  onclick="eightBall()" type="button" id='submit' value="Click to reveal your fortune" name='submit'>
+         </form>
+    </main>
+    <script src="./magicEightBall.js"></script>
+</body>
+</html>
